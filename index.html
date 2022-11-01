@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My calculator</title>
+
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <input type="text" id="inputvalues" placeholder="0" />
+      <button onclick="clr()" class="red">C</button>
+      <button onclick="del()" class="green">DEL</button>
+      <button onclick="perc()" class="green">%</button>
+      <button onclick="calc('/')" class="green">÷</button>
+      <button onclick="calc(7)">7</button>
+      <button onclick="calc(8)">8</button>
+      <button onclick="calc(9)">9</button>
+      <button onclick="calc('*')" class="green">x</button>
+      <button onclick="calc(4)">4</button>
+      <button onclick="calc(5)">5</button>
+      <button onclick="calc(6)">6</button>
+      <button onclick="calc('-')" class="green">-</button>
+      <button onclick="calc(1)">1</button>
+      <button onclick="calc(2)">2</button>
+      <button onclick="calc(3)">3</button>
+      <button onclick="calc('+')" class="green">+</button>
+      <button onclick="calc(0)">0</button>
+      <button onclick="calc('.')" class="green">.</button>
+      <button onclick="result()" class="equal-green">=</button>
+      <script src="index.js"></script>
+    </div>
+  </body>
+</html>
