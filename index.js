@@ -1,5 +1,7 @@
 let numberToCalc = document.getElementById("inputvalues");
 
+// This function takes in an argument and it to what is already in the input field
+// It also alerts the user when more than 15digits are is entered
 let calc = (num) => {
   numberToCalc.value += num;
   if (numberToCalc.value.length > 15) {
@@ -7,6 +9,8 @@ let calc = (num) => {
   }
 };
 
+// This function evaluates the content of the input
+// It also alert the user if the inputs are not mathematically valid to be calculated
 let result = () => {
   try {
     numberToCalc.value = eval(numberToCalc.value);
@@ -15,23 +19,17 @@ let result = () => {
   }
 };
 
+//  This function returns the percentage of evaluated inputs
 let perc = () => {
   numberToCalc.value = eval(numberToCalc.value) * 0.01;
 };
 
+// This function clears the input field
 clr = () => {
   numberToCalc.value = " ";
 };
 
+// Function to delete the last digit or operator in the field
 del = () => {
   numberToCalc.value = numberToCalc.value.slice(0, -1);
 };
-
-// var count= 0
-// setColor = () => {
-
-//   document.getElementsByTagName("button").style.backgroundColor = ;;
-//   if
-// };
-
-// console.log(setColor("C"));
